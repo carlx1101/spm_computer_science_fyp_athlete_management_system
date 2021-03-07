@@ -41,7 +41,6 @@
                 <tr>
                     <th>Athlete IC</th>
                     <th>Athlete Name</th>
-                    <th>Edit</th>
                     <th>Delete</th>
                 </tr>
             </thead>
@@ -87,7 +86,7 @@
     </div>
 
 
-
+    <br><br>
     <div class="container">
         <h3 class="text-center">All Activities</h3>
     </div>
@@ -97,7 +96,6 @@
                 <tr>
                     <th>Acvitivity Code</th>
                     <th>Activity Name</th>
-                    <th>Edit</th>
                     <th>Delete</th>
                 </tr>
             </thead>
@@ -107,7 +105,6 @@
                 <tr>
                 </tr>
             </tbody>
-            
 
 
             <?php
@@ -130,10 +127,8 @@
         echo "<tr>";
         echo "<td>".$row['ActivityCode']."</td>";
         echo "<td>".$row['ActivityName']."</td>";
-        
+        echo "<td><button><a href=deleteactivity.php?id=".$row['ActivityID'].">Delete</button></td>";   
     }
-
-   
    ?>
 
         </table>
@@ -141,7 +136,7 @@
 
 
 
-    
+    <br><br>
     <div class="container">
         <h3 class="text-center">All Data</h3>
     </div>
@@ -165,8 +160,6 @@
                 </tr>
             </tbody>
             
-
-
             <?php
 
     // create connecttion with mysql database 
@@ -194,12 +187,31 @@
         echo "<td>".$row['Engagement']."</td>";
         
     }
-
-   
    ?>
 
         </table>
+        <br><br><br>
+
+  
+
+        <div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <button class="btn btn-primary" value="Print Data" onClick="window.print()">Print All</button>
     </div>
+  </div>
+</div>
+    
+        <br>
+
+        <script type="text/javascript">
+        function printDiv(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        w=window.open();
+        w.document.write(printContents);
+        w.print();
+        w.close();
+    }
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>

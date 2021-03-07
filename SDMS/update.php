@@ -60,7 +60,7 @@
                             <br><br>
                             <p>IC Number</p><input class="form-control" type="text" placeholder="IC Number" required="" name="icnumber">
                             <br>
-                            <button class="btn btn-primary" type="submit">Update</button>
+                            <button class="btn btn-primary" type="submit">ADD</button>
                             <br><br><br><br>
                         </form>
                     </div>
@@ -74,7 +74,7 @@
                             <br><br>
                             <p>Activity Name</p><input class="form-control" type="text" placeholder="Activity Name" required="" name="activityname">
                             <br>
-                            <button class="btn btn-primary" type="submit">Update</button></form>
+                            <button class="btn btn-primary" type="submit">ADD</button></form>
                             <br><br><br>
                     </div>
                 </div>

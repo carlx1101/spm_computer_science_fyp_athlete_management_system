@@ -17,13 +17,13 @@
     $sql = "INSERT INTO athlete (AthleteName,ICNumber) VALUES ('$AthleteName','$ICNumber')";
     if (!mysqli_query($con,$sql))
     {
-        echo 'Not Inserted';
+        echo 'Not Inserted'. mysqli_error($con);
     }
     else
     {
         echo 'Data Inserted';
     }
 
-    header("refresh:2; url=update.php");
+    header("refresh:1; url=update.php");
 
 ?>

@@ -19,14 +19,14 @@ if (!isset($_SESSION['loggedin'])) {
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="home/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="home/css/styles.min.css">
 </head>
 
 <body>
     <!-- Start: Navigation with Search -->
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
-        <div class="container"><a class="navbar-brand" href="home.php"><img src="assets/img/logo.png" style="width: 100px;">Athlete&nbsp;Management System</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="home.php"><img src="home/img/logo.png" style="width: 100px;">Athlete&nbsp;Management System</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav">
@@ -50,7 +50,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <p><a class="btn btn-primary" role="button" href="functions.html">Functions</a></p>
                     </div>
                 </div>
-                <div class="col-md-6"><img src="assets/img/smkpi.jpg" style="width: 320px;"></div>
+                <div class="col-md-6"><img src="home/img/smkpi.jpg" style="width: 320px;"></div>
             </div>
         </div>
     </div>
